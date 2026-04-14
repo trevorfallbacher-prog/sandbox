@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Savera — Phone Call (Lottie)</title>
+  <style>
+    :root { color-scheme: dark; }
+    html, body {
+      margin: 0; height: 100%;
+      background: radial-gradient(circle at 50% 30%, #1a2a4a 0%, #060914 70%);
+      font-family: -apple-system, system-ui, sans-serif;
+      color: #cbd5e1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+    h1 { font-weight: 500; letter-spacing: 0.04em; margin: 0 0 12px; font-size: 16px; opacity: 0.75; }
+    #stage { width: min(600px, 85vw); aspect-ratio: 1 / 1; }
+    .caption { margin-top: 12px; font-size: 12px; opacity: 0.5; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+  <h1>Savera — phone-call idle</h1>
+  <div id="stage"></div>
+  <div class="caption">float · gentle tilt · breathing</div>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('stage'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'savera-phone-call.json'
+    });
+  </script>
+</body>
+</html>
